@@ -1,0 +1,12 @@
+html
+    head
+        title Pug lo html
+    body
+        h1 Indentation based UI Generation
+        table
+            tbody
+                each std in students
+                    tr
+                        td= std.firstname
+                        td
+                            img(src= std.profilepic)

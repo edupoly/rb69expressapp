@@ -1,0 +1,11 @@
+html
+    head
+        title Pug lo html
+    body
+        h1 All Products of Edupoly
+        ul(style={"display":'flex',"flex-wrap":"wrap"})
+            each product in allproducts
+                li(style={width:"150px",'list-style':"none",margin:"10px 20px",'text-align':"center"})
+                    a(href=`/products/productDetails/${product.id}`) 
+                        img(src= product.thumbnail style={width:"90%"})
+                        span= product.title
